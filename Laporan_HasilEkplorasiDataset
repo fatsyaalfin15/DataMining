@@ -1,0 +1,28 @@
+1. # Berdasarkan hasil dari ekplorasi data menggunakan bahasa pemograman python yang bersumber dari dataset  Heart Disease UCI 
+dalam analisis ini terdiri dari berbagai variabel yang berkaitan dengan kondisi kesehatan pasien, seperti usia, jenis kelamin, 
+tekanan darah, kadar kolesterol, dan apakah mereka menderita penyakit jantung atau tidak. Tujuan dari eksplorasi data ini 
+adalah untuk memahami karakteristik dataset,mengidentifikasi pola yang signifikan, serta mendeteksi anomali seperti outliers dan nilai yang hilang (missing values).
+
+2. # langkah pertama adalah ekplorasi awal 
+Eksplorasi awal dilakukan dengan menampilkan lima baris pertama dan terakhir dari dataset serta mendapatkan informasi umum tentang struktur data. 
+Dataset ini terdiri dari 303 entri dengan 14 kolom. Beberapa kolom seperti age, trestbps (tekanan darah), chol (kolesterol), dan thalach (denyut jantung maksimum)
+adalah numerik, sementara kolom sex dan cp (chest pain type) adalah kategorikal. Tidak ditemukan nilai yang hilang dalam dataset ini.
+
+3. # Statistik Deklaratif
+-Mean, Median, Mode: Analisis statistik deskriptif menunjukkan bahwa variabel seperti usia dan kadar kolesterol memiliki distribusi yang cukup seimbang, dengan mean yang mendekati median. Namun, mode menunjukkan bahwa beberapa nilai muncul lebih sering, terutama dalam variabel kategorikal seperti cp dan sex.
+
+-Standar Deviasi dan Variansi: Standar deviasi yang lebih tinggi pada variabel seperti chol menunjukkan variasi yang signifikan di antara pasien dalam hal kadar kolesterol.
+
+-Skewness dan Kurtosis: Distribusi data pada beberapa variabel seperti trestbps menunjukkan skewness positif, menandakan ekor distribusi yang lebih panjang di sisi kanan. Sebaliknya, thalach menunjukkan kurtosis negatif, menandakan distribusi yang lebih mendatar.
+
+-Korelasi: Korelasi antar variabel menunjukkan bahwa variabel age dan trestbps memiliki korelasi positif yang lemah, sementara variabel seperti thalach dan oldpeak menunjukkan korelasi negatif yang signifikan.
+
+4. # Deteksi Outliers
+Outliers dideteksi menggunakan metode Interquartile Range (IQR). Variabel seperti chol dan trestbps menunjukkan keberadaan beberapa outliers,
+yang bisa menjadi indikasi pasien dengan kondisi kesehatan yang ekstrem.Namun, keputusan apakah akan menghapus outliers ini tergantung pada konteks analisis lebih lanjut.
+
+5. #Kesimpulan 
+Eksplorasi data pada dataset Heart Disease UCI ini mengungkapkan beberapa temuan penting seperti bisa kita ketahui  Terdapat distribusi data yang bervariasi pada variabel numerik,
+dengan beberapa variabel menunjukkan skewness yang signifikan.Korelasi antar variabel mengidentifikasi beberapa pasangan variabel yang memiliki hubungan kuat, yang dapat diteliti lebih lanjut dalam analisis prediktif.
+Deteksi outliers mengungkap adanya data ekstrem yang dapat mempengaruhi analisis jika tidak ditangani dengan baik.
+Temuan ini memberikan landasan yang kuat untuk analisis lebih lanjut, seperti pembangunan model prediktif untuk mendeteksi risiko penyakit jantung berdasarkan variabel-variabel kesehatan yang ada dalam dataset.
